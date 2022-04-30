@@ -14,6 +14,8 @@ Team members are:
 
 4. Abhinay Singh
 
+5. Ashraf Ali Korbu
+
 Working together with the team to solve the project which is "To predict the sales of a European Drug store Company -Rossmann" which is to predit the sales 6 weeks in Advance. Using two data sets:-
 
 1.Rossmann Stores Data.csv - historical data including Sales
