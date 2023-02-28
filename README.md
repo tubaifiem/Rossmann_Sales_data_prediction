@@ -1,8 +1,8 @@
-# Rossmann Drug Store Sales Prediction 
+# Sales Data Prediction 
 
 ## Machine Learning Project Report 
 
-Soumabha Sarkar
+### Soumabha Sarkar
 
 
 Abstract—Our project attempted to apply various machine learning techniques to a real-world problem of predicting drug store sales. Rossmann operates over 3,000 drug stores in 7 European countries and has provided past sales information of 1115 Rossmann stores located across Europe. We preprocessed, feature-engineered the data, and examined different statistical / machine learning analysis for forecasting sales of each store. Then, we  compared the methods’ predictive power by computing Root Mean Square Percentage Error (RMSPE). 
