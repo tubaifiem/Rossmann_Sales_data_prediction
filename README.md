@@ -1,17 +1,17 @@
-Rossmann Drug Store Sales Prediction 
+# Rossmann Drug Store Sales Prediction 
 
-Machine Learning Project Report 
+## Machine Learning Project Report 
 
 Soumabha Sarkar
 
 
 Abstract—Our project attempted to apply various machine learning techniques to a real-world problem of predicting drug store sales. Rossmann operates over 3,000 drug stores in 7 European countries and has provided past sales information of 1115 Rossmann stores located across Europe. We preprocessed, feature-engineered the data, and examined different statistical / machine learning analysis for forecasting sales of each store. Then, we  compared the methods’ predictive power by computing Root Mean Square Percentage Error (RMSPE). 
 
-I. INTRODUCTION 
+### I. INTRODUCTION 
 
 The objective of this project is to predict 6 weeks of daily sales for 1115 Rossmann stores located across Germany Using  the data which was provided by Rossmann through Almabetter. The motivation of this project is the following:  by reliably predicting daily sales, store managers may  decrease operational costs, and create effective staff  schedules (ex. by assigning more staff during busy days). Also, we would like to identify which type of techniques are  both efficient and effective in a real-world sales prediction task. 
 
-II. DATA 
+### II. DATA 
 
 Data sets are given by Rossmann through Kaggle. There  are three files: “Rossmann Store data.csv”, “Store.csv”, and  Colab notebook containing 1001599 observed daily sales of  different stores from 2013 to 2015. “store.csv” contains  supple- mentary information for each store (1115 lines 
 because there are 1115 stores). “Rossmann Store data.csv” and “store.csv” both contain a Store id that can be used to join  the data sets. Finally, “Rossmann Store data.csv” has  1115 lines of daily sales of different stores but the value of Sales column is omitted.We are expected to predict the value of Sales column for the test set (“Rossmann Store data.csv”) and store data (“store.csv”). The following table  describes fields : 
@@ -36,7 +36,7 @@ SchoolHoliday: an indicator of whether the store was affected by a nearby school
 
 
 
-A. Preprocessing 
+### A. Preprocessing 
 
 • We first merged “Rossmann Store data.csv” and  “store.csv” by “Store” because we can predict daily sales better with more data related to the sales. We also  merged “Rossmann Store data.csv” and “store.csv” by “Store”.
 
@@ -44,7 +44,7 @@ A. Preprocessing
 
 • We computed average sales for each store to create a new field “AverageSales”. This variable seemed to be an  indicator of how well a store will perform in future. This  makes sense because a store with a strong past performance is likely to perform well in future. 
 
-B. Exploratory Data Analysis 
+### B. Exploratory Data Analysis 
 
 I. Correlation Heatmap between features. 
 II. Stores are mainly open on which day of the week to analyze. 
@@ -92,7 +92,7 @@ Fig. 6 store type
 Type A stores are having 54.0% market share while Type B and Type C stores are having market share of 31.2% and 13.3% respectively. 
 Assortment is a collection of goods or services that a business provides to customers. B type stores provide maximum service in every  assortment type store. Between them the extended service is the highest. 
 
-C. Feature Selection 
+### C. Feature Selection 
 
 Fig.8 Feature Selection
 
@@ -125,7 +125,7 @@ The main component of XGBoost is its tree ensembles which sum up the predictions
 
 The XGB Regressor gives better RMSE and R Square values compared to other previous models. It is showing higher accuracy compared to other models. 
 
-CONCLUSION: 
+### CONCLUSION: 
 
 The Rossmann store sales prediction is a very engrossing data science  problem to solve. We noticed that the problem is more concentrated  towards the feature engineering and the feature selection part than on  model selection. We had to spend around 60-70% of our time on  analyzing data for trends in order to make our feature selection easier. 
 
