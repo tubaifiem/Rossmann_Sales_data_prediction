@@ -38,8 +38,10 @@ SchoolHoliday: an indicator of whether the store was affected by a nearby school
 
 A. Preprocessing 
 
-• We first merged “Rossmann Store data.csv” and  “store.csv” by “Store” because we can predict daily sales better with more data related to the sales. We also  merged “Rossmann Store data.csv” and “store.csv” by “Store”. 
+• We first merged “Rossmann Store data.csv” and  “store.csv” by “Store” because we can predict daily sales better with more data related to the sales. We also  merged “Rossmann Store data.csv” and “store.csv” by “Store”.
+
 • We splitted “Date” field into three fields: “year”, “month”, and “day” to better account for the effects each component of date has.
+
 • We computed average sales for each store to create a new field “AverageSales”. This variable seemed to be an  indicator of how well a store will perform in future. This  makes sense because a store with a strong past performance is likely to perform well in future. 
 
 B. Exploratory Data Analysis 
