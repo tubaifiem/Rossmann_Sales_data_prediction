@@ -99,7 +99,7 @@ Fig.8 Feature Selection
 Among numerical columns, Sales and Customers are heavily  skewed and from correlation heat maps it was seen that the Customers column is causing multicollinearity. So we do not take the Customer column at the time of feature selection. 
 As the Sales column is also skewed, we will apply natural logarithm to decrease the skewness. 
 
-❖ LINEAR REGRESSION: 
+**LINEAR REGRESSION:**
 
 This model is a rudimentary first look into large-scale trends. We did not expect it to capture the  granular movements of the sales numbers and indeed it  didn’t, reporting an average RMSE of 37.31%. We  observe that there are minimal inter-year trends and therefore can safely disregard them in future considerations. 
 
@@ -112,14 +112,14 @@ We are using a linear regression model so, we need to check 4 basic assumptions 
 3. There should not be heteroscedasticity. 
 Linear Regression 
 
-Ridge Regression 
+**Ridge Regression**
 
 • Ridge Regression is a model tuning method that  is used to analyze any data that suffers from  multicollinearity. This method performs L2 regularization.  When the issue of multicollinearity occurs, least-squares are unbiased, and variances are large, this results in predicted  values being far away from the actual values. 
 
 • Lasso Regression is also called the Penalized regression  method. This method is usually used in machine learning for  the selection of the subset of variables. It provides greater  prediction accuracy as compared to other regression  models. Lasso Regularization helps to increase model  interpretation. 
 Lasso Regression
 
-❖ XgBoost 
+**XgBoost** 
 
 The main component of XGBoost is its tree ensembles which sum up the predictions of multiple trees. The boost- ing  procedure in XGBoost is an additive process where a trained  model is added to the prediction at each step. In our implementation, we used the RMSE as the loss function for optimization. 
 
